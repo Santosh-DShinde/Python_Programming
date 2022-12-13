@@ -15,11 +15,12 @@ class Arithmetic:
         self.Value = a
 
     def ChkPrime(self):
+        flag = False
         for i in range(2, self.Value, 1):
             if self.Value % 2 == 0:
-                return False
+                break
             else:
-                return True
+                flag = True
 
     def ChkPerfect(self):
         Perft = self.SumFactors()
